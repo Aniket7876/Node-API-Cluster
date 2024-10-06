@@ -4,7 +4,7 @@ const app = require("./src/app");
 
 if (cluster.isMaster) {
   console.log(`Master process ${process.pid} is running`);
- 
+  
   const numWorkers = 2;
   for (let i = 0; i < numWorkers; i++) {
     cluster.fork(); 
