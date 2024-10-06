@@ -1,5 +1,5 @@
-const express = require('express');
-const taskRoutes = require('./routes/taskRoutes');
+const express = require("express");
+const taskRoutes = require("./routes/taskRoutes");
 
 const app = express();
 
@@ -7,6 +7,6 @@ const app = express();
 app.use(express.json());
 
 // Task route
-app.use('/api/v1', taskRoutes);
+app.use("/api/v1", taskRoutes);
 
 module.exports = app;
